@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+Operations List
+
+
+{% for operation in operations %}
+
+{{ operation.operation_name }}
+{{ operation.operation_location }}
+
+{% endfor %}
+{% endblock %}
